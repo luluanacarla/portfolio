@@ -1,0 +1,50 @@
+// imports
+@import 'config/main';
+@import 'components/main';
+@import 'layout/main.scss';
+@import
+  'partials/bs',
+  '../../../node_modules/bootstrap/scss/bootstrap';
+
+// mobile-first media queries
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: $white;
+  // background: $cyan;
+  // @include media-breakpoint-up(sm) {
+  //   background: $green;
+  // }
+  // @include media-breakpoint-up(md) {
+  //   background: $red;
+  // }
+  // @include media-breakpoint-up(lg) {
+  //   background: $teal;
+  // }
+  // @include media-breakpoint-up(xl) {
+  //   background: $yellow;
+  // }
+}
+
+// desktop-first media queries
+/*
+body {
+  background: $yellow;
+  @include media-breakpoint-down(lg) {
+    background: $teal;
+  }
+  @include media-breakpoint-down(md) {
+    background: $red;
+  }
+  @include media-breakpoint-down(sm) {
+    background: $green;
+  }
+  @include media-breakpoint-down(xs) {
+    background: $cyan;
+  }
+}*/
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 70px;
+}
