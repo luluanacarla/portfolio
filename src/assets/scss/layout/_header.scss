@@ -1,0 +1,102 @@
+.header {
+    z-index: 1000;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    padding: 28px 0;
+    background: #fff;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    -ms-transition: padding 0.3s;
+    transition: padding 0.3s;
+    
+    &__inner {
+        padding: 0 40px;
+
+        &__logo {
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            position: relative;
+
+            a{
+                background-image: url(../img/logo_2x.png);
+                font-weight: bold;
+                font-size: 2rem;
+                background-size: 98px 59px;    
+                display: block;
+                width: 98px;
+                height: 59px;
+                background-repeat: no-repeat;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                -ms-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+        }
+
+        &__main-navigation {
+            display: block;
+            vertical-align: middle;
+            text-align: center;
+            float: right;
+            margin-top: 7px;
+
+            ul {
+                display: inline-block;
+                list-style: none;
+                padding: 0;
+                margin: -2px 0 0 -10px;
+
+                &::before, &::after {
+                    content: "";
+                    display: table;
+                }
+
+                li {
+                    display: inline-block;
+                    margin: 0 0 2px 10px;
+
+                    a {
+                        font-weight: bold;
+                        display: block;
+                        line-height: 20px;
+                        text-decoration: none;
+                        color: #EC5752;
+                        padding: 3px 0 1px 0;
+                        outline: none !important;
+                        position: relative;
+                            &:after {
+                                position: absolute;
+                                left: 50%;
+                                right: 50%;
+                                height: 3px;
+                                bottom: 0;
+                                content: "";
+                                background-color: #A1BE94;
+                                @include prefix( "transition", 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55));
+				  	            @include prefix( "transform", translate3d(0, 0, 0));
+                        }
+
+                        &:hover:after {
+                            left: 10%;
+                            right: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sticky {
+	padding: 12px 0 !important;
+	.header__inner__logo a {
+		width:72px !important;
+		height:45px !important;
+		background-size:72px 45px !important;
+	}
+}

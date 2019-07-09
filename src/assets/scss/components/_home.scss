@@ -1,0 +1,61 @@
+.home {
+    height: 100vh;
+    &__content {
+        h1 {
+            font-size: 5em;
+            margin: 0;
+            line-height: 1em;
+            @media (max-width: 736px){
+                font-size: 2em !important;
+                line-height: 1.4em !important;
+            }
+
+            @media (max-width: 1042px) {
+                font-size: 3.5em;
+                line-height: 1.2em;
+            }
+        }
+        padding-top: 100px;
+
+        &--vertical-middle {
+            padding: 0 20px 200px 20px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        &__type-container {
+            position: relative;
+
+            &__type-container-inner {
+                top: 0px;
+                bottom: 0px;
+                opacity: 1;
+                position: absolute;
+                left: 0;
+
+                #output {
+                    @media (max-width: 736px){
+                        font-size: 2em !important;
+                        line-height: 1.4em !important;
+                    }        
+                    @media (max-width: 1042px) {
+                        font-size: 3.5em;
+                    }
+                    display: inline-block;
+                    padding: 5px 0;
+                    margin: 50px 0;
+                    font-family: "Dosis";
+                    font-size: 5em;
+                    font-weight: bold;
+                    border-right: 4px solid #848383;
+                }
+            }
+        }
+    }
+    &--vertical-outer {
+        display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+}

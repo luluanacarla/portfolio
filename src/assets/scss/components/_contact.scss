@@ -1,0 +1,53 @@
+.contact {
+    font-family: "Dosis";
+    background: #EC5752;
+    clear: both;
+    padding: 120px 120px 130px 120px;
+    
+    @media (max-width: 736px){
+        padding: 100px 30px 110px 30px;
+    }
+
+    &__wrapper {
+        margin-top: 0px;
+    }
+
+    p {
+
+        @media (max-width: 900px) {
+            color: #EC5752;
+        }
+
+        color: #efeffa;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+        @media (max-width: 1200px){
+            font-size: 3.5em;
+        }
+
+        @media (max-width: 880px) {
+            font-size: 2em;
+        }
+
+        @media (max-width: 460px) {
+            font-size: 1.5em;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #A1BE94;
+
+        &:hover {
+            color: #A1BE94;
+        }
+    }
+
+    @media (max-width: 900px) {
+        background: #fff;
+    }
+}

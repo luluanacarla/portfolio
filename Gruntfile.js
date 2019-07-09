@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			scripts: {
-				files: ['*.html', 'src/assets/scss/**/*.scss'],
+				files: ['*.html', 'src/assets/scss/**/*.scss', 'src/assets/js/*.js'],
 				tasks: ['sass'],
 				options: {
 					livereload: true
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
 		  uglify: {
 			my_target: {
 			  files: {
-				'dist/js/.min.js': ['src/assets/js/index.js']
+				'dist/js/index.min.js': ['src/assets/js/index.js']
 			  }
 			}
 		},
